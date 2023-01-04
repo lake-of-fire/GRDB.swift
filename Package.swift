@@ -5,9 +5,11 @@ import Foundation
 import PackageDescription
 
 var swiftSettings: [SwiftSetting] = [
-     .define("SQLITE_ENABLE_FTS5"),
+    .define("SQLITE_ENABLE_FTS5"),
 ]
-var cSettings: [CSetting] = []
+var cSettings: [CSetting] = [
+    .define("SQLITE_ENABLE_FTS5"),
+]
 
 // The SPI_BUILDER environment variable enables documentation building
 // on <https://swiftpackageindex.com/groue/GRDB.swift>. See
